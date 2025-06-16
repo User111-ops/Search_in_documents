@@ -4,8 +4,6 @@ from haystack.components.embedders import OpenAIDocumentEmbedder
 from haystack.components.writers import DocumentWriter
 from haystack.components.retrievers import InMemoryEmbeddingRetriever
 from haystack.utils import convert_files_to_docs
-print(convert_files_to_docs)
-<function convert_files_to_docs at 0x7f...>
 from pathlib import Path
 import json
 import os
