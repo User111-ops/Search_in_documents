@@ -7,6 +7,12 @@ from haystack.utils import convert_files_to_docs
 from pathlib import Path
 import json
 import os
+from haystack.nodes import CohereReranker
+
+reranker = CohereReranker(api_key="TA_CLE_COHERE", top_k=3)
+
+# Puis dans ton pipeline Haystack :
+# pipeline.add_node(component=reranker, name="Reranker", inputs=["Retriever"])
 
 UPLOAD_DIR = Path("uploaded_documents")
 LOG_PATH = Path("index_log.json")
