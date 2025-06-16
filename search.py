@@ -1,5 +1,5 @@
 import streamlit as st
-from haystack.document_stores import InMemoryDocumentStore
+from haystack.document_stores.in_memory import InMemoryDocumentStore
 from haystack.components.embedders import OpenAIDocumentEmbedder
 from haystack.components.writers import DocumentWriter
 from haystack.components.retrievers import InMemoryEmbeddingRetriever
